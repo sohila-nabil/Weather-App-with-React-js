@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    width: 400px;
+    margin:100px auto;
+    background-color: rgb(91, 22, 169);
+    padding: 15px 20px;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+.header {
+    width: 80%;
+    margin:auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+input {
+    width: 80%;
+    margin: auto;
+    height: 45px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding: 8px ;
+}
+input:focus {
+    outline: none;
+}
+.search_icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.body {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    margin-top: 20px;
+}
+.cloud img{
+    width: 170px;
+}
+.temp {
+    position: relative;
+    font-size: 60px;
+    color: white;
+
+}
+.temp::after {
+    position: absolute;
+    content: '';
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: 3px solid white;
+    right: -22px;
+    top: 19px;
+}
+.c {
+    font-size: 45px;
+    color: white;
+    position: relative;
+    left: 25px;
+}
+.city {
+    color: white;
+    font-size: 40px;
+    font-weight: normal;
+}
+.footer {
+    margin-top: 26px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.humidityDiv {
+    display: flex;
+    align-items: center;
+}
+.data {
+    margin-left: 15px;
+    color: white;
+}
+.data h4 {
+    font-size: 20px;
+    font-weight: normal;
+}
